@@ -89,8 +89,8 @@ axproo/core-lib/
 ## 🧑‍💻 Auteur
 
 Christian DJOMOU
-📧 <developper@axproo.com>
 
+📧 <developper@axproo.com>
 🌐 <https://axproo.com>
 
 ## 📜 Licence
