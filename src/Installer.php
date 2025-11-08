@@ -6,6 +6,11 @@ use Composer\Script\Event;
 
 class Installer
 {
+    /**
+     * Summary of install
+     * @param \Composer\Script\Event|\Composer\Installer\PackageEvent|null $event
+     * @return void
+     */
     public function install(Event|PackageEvent|null $event = null) : void {
         // Gestion de l'interface IO
         $io = null;
@@ -22,7 +27,7 @@ class Installer
         // Détection des routes
         $rootDir = getcwd();
         $vendorDir = $rootDir . '/vendor/axproo/cors-lib/src/Filters';
-        $destDir = $rootDir . '/app/Helpers';
+        $destDir = $rootDir . '/app/Filters';
 
         if (!is_dir($vendorDir)) {
             if ($io) {

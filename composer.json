@@ -1,6 +1,6 @@
 {
     "name": "axproo/cors-lib",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Bibliothèque Axproo de Cors Filter",
     "type": "composer-plugin",
     "require": {

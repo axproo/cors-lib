@@ -1,6 +1,6 @@
 <?php
 
-namespace Axproo\HelperLib;
+namespace Axproo\CorsLib;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
