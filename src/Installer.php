@@ -11,7 +11,7 @@ class Installer
      * @param \Composer\Script\Event|\Composer\Installer\PackageEvent|null $event
      * @return void
      */
-    public function install(Event|PackageEvent|null $event = null) : void {
+    public static function install(Event|PackageEvent|null $event = null) : void {
         // Gestion de l'interface IO
         $io = null;
         if ($event instanceof Event || $event instanceof PackageEvent) {
