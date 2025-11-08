@@ -1,0 +1,39 @@
+{
+    "name": "axproo/cors-lib",
+    "version": "1.0.0",
+    "description": "Bibliothèque Axproo de Cors Filter",
+    "type": "composer-plugin",
+    "require": {
+        "php": "^8.1",
+        "codeigniter4/framework": "^4.5",
+        "composer-plugin-api": "^2.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Axproo\\CorsLib\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Christian DJOMOU",
+            "email": "developper@axproo.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "class": "Axproo\\CorsLib\\Plugin"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Axproo\\CorsLib\\Installer::install"
+        ],
+        "post-update-cmd": [
+            "Axproo\\CorsLib\\Installer::install"
+        ]
+    },
+    "prefer-stable": true,
+    "require-dev": {
+        "composer/composer": "^2.7"
+    }
+}
